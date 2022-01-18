@@ -1,32 +1,14 @@
-Docx to pdf
-=========
+# It's not published, but it's an sample for the current purpose which is to get an docx buffer and transform it into an pdf
+
+# Docx to pdf
 
 A library that converts docx file to pdf.
-
-## Installation
-
-  npm install docx-pdf --save
 
 ## Usage
 
     var docxConverter = require('docx-pdf');
 
-    docxConverter('./input.docx','./output.pdf',function(err,result){
-      if(err){
-        console.log(err);
-      }
-      console.log('result'+result);
-    });
-    
-    its basically docxConverter(inputPath,outPath,function(err,result){
-      if(err){
-        console.log(err);
-      }
-      console.log('result'+result);
-    });
-  
-  Output should be output.pdf which will be produced on the output path your provided
-
+    const pdfBuffer = docxConverter(docxBuffer);
 
 ## Contributing
 
